@@ -1,0 +1,65 @@
+h2{
+    text-align: center;
+}
+
+.custom-loader {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    animation: s4 4s infinite;
+  }
+  .custom-loader::before,
+  .custom-loader::after {    
+    content:"";
+    grid-area: 1/1;
+    border:4px solid;
+    border-radius: 50%;
+    border-color:#766DF4 #766DF4 #0000 #0000;
+    mix-blend-mode: darken;
+    animation: s4 1s infinite linear;
+  }
+  .custom-loader::after {
+    border-color:#0000 #0000 #E4E4ED #E4E4ED;
+    animation-direction: reverse;
+  }
+  
+  @keyframes s4{ 
+    100%{transform: rotate(1turn)}
+  }
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.display{
+    min-width: 400px;
+    min-height: 200px;
+    border: 1px solid black;
+}
+main{
+    justify-content: center;
+    display: flex;
+}
+button{
+    width: 120px;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+}
+.deletebutton{
+    background-color: red;
+    width: 50%;
+}
+.editbutton{
+    background-color: aqua;
+    width: 50%;
+}
+.savebutton{
+    background-color: green;
+    width: 50%;
+}
